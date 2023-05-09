@@ -1,0 +1,198 @@
+body {
+    font-family: 'Roboto', 'sans-serif';
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Font Sizes */
+
+.texto-header {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor-form label {
+    font-size: 14px;
+}
+
+/* HEADER */
+
+header {
+    margin: auto;
+    background-color: #eac926;
+    padding-bottom: 20px;
+}
+
+.buscador {
+    width: 32vw;
+    border-radius: 12px;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buscador input {
+    width: 85%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    border-radius: 12px;
+}
+
+.buscador i {
+    width: 12%;
+}
+
+.main-header-top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    max-width: 50%;
+}
+
+.buscador {
+    max-width: 50%;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+.descripciones {
+    display: none;
+}
+
+nav {
+    display: none;
+}
+
+/* Burger Menu */
+
+.burger-menu {
+    background-color: #1259c3;
+    display: block;
+    color: white;
+    text-align: center;
+    height: 16px;
+    width: 14px;
+    padding: 8px;
+    border-radius: 20%;
+    margin: auto;
+}
+
+/* Formulario */
+
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: left;
+    margin: 20px;
+    background-color: white;
+}
+
+.contenedor-form, .botones {
+    margin-bottom: 2%;
+    padding-left: 10%;
+}
+
+.botones {
+    margin-top: 1%;
+}
+
+.botones button {
+    background-color: #39b54a;
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.contenedor-form input {
+    font-size: 14px;
+}
+
+.contenedor-form input:focus {
+    color: #1259c3;
+}
+
+@media (min-width: 679px) {
+
+    /* Header */
+
+    .main-header-top-bar {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .main-navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .main-navbar ul li {
+        margin-right: 20px;
+    }
+
+    header button {
+        max-height: 32px
+    }
+
+    /* Main */
+
+    .descripciones {
+        display: inherit;
+    }
+
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+}
+
+/*Desktop min-width:1200*/
+
+@media (min-width: 679px) {
+    .logo {
+        max-width: 400px;
+    }
+}
+
+
+
